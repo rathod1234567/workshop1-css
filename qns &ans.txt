@@ -1,0 +1,130 @@
+1.what is the difference between the div and span element?
+Ans: div: div is a block level element. it is used for structuring and grouping sections of contents and it takes up full width available
+    sapn: span is a inline element.it is used for group small section of text within block and it only takes as much width as  necessary and does not start in a new line. 
+2.what are the semantic elements in HTML?
+Ans: Semantic elements in HTML are those that clearly describe the meaning of their content.
+   some of the semantic element are,
+   -<header>
+   -<footer>
+   -<section>
+   -<nav>
+   -<aside>
+   -<mark>
+   -<details>
+
+3. what is the difference between  the href attribute and the src attribute?
+
+Ans: href attribute:
+     href are commonly used with anchor (<a>) elements and it is used for hyperlinks and navigation
+     example:
+     <a href ="">click here</a>
+     src attribute: it is used with image,script,iframe and for embedding external content.
+     example:
+     <img src="" alt="">
+
+4.What is the difference between HTML and XML?
+Ans: HTML: Designed for displaying data. It has predefined tags such as <div>, <p>, etc. and it is less strict about closing tags and nesting.
+
+     XML: Designed to store and transport data. It is strict about syntax and requires properly nested and closed tags
+
+5.What are list tags and how many are they?
+
+   The main list tags in HTML are:
+     - <ul>: Unordered list (bulleted).
+     - <ol>: Ordered list (numbered).
+     - <li>: List item, used within both <ul> and <ol>.
+   - There is also <dl>: Description list, with <dt> for the term and <dd> for the description.
+
+6.Create an iframe where a single iframe can open multiple links in it?
+ Ans: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe name="myIframe" src="https://www.wikipedia.org/" width="400" height="300"></iframe>
+   
+   <a href="https://en.wikipedia.org/wiki/Virat_Kohli" target="_blank" id="myIframe">Link 1</a>
+   <a href="https://en.wikipedia.org/wiki/Mahesh_Babu" target="_blank" id="myIframe">Link 2</a>
+   
+</body>
+</html>
+
+7.Create a register form using name, email, age, privacy policies, and submit, and do validations?
+   ans: registration form
+       html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body style="text-align: center;">
+
+    <h2>Registration Form</h2>
+
+    <form action="./vali.txt" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" required><br><br>
+        <input type="checkbox" id="privacy" name="privacy" required>
+        <label for="privacy">I agree to the privacy policy</label><br><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
+     
+     8.What is the command for connecting a local repo and GitHub repo?
+    ans: The git remote add command is used to connect your local repository to a remote GitHub repository
+    syntax:
+     git remote add origin <repository-url>
+
+     9.Git command to change the directory of a local folder?
+     ans: To change directories in your terminal, use the cd command
+     
+             cd <directory-path>
+
+     10.Git command to check the commits on the project?
+     ans: Use the git log command to view the commit history
+
+     11.Git command for pushing all the code to the "ravi" branch?
+     ans:
+          First, make sure we're on the "ravi" branch and then push your code:
+     git checkout ravi
+     git push origin ravi
+     
+     12.Difference between the pull and push commands in Git?
+     ans:git pull: This command fetches changes from the remote repository and merges them into your local branch.
+         git push: This command uploads your local changes to the remote repository
+
+    13.Command to check the number of branches and command to switch the branch?
+    ans: To check branches:      git branch
+         To switch branches:     git checkout <branch-name>
+
+
+    14.What are the stages of our project to reach GitHub repo?
+
+    ans:
+       - git init
+       - git add .
+       - git commit -m "initial commit"
+       - git remote add origin <repository-url>
+       - git branch -M main
+       - git push origin main
+
+    15.The commands which we use in the staging area?
+    ans: The main command used to add files to the staging area is
+          git add.
+
+
+
+
+     
